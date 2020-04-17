@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#404040">
+        <ImageView
+            android:id="@+id/ivDetail"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_200sdp"
+            android:layout_centerHorizontal="true"
+            android:background="#FFFF"
+            android:scaleType="centerCrop"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_200sdp"
+            android:src="@drawable/dark_30"/>
+
+        <RelativeLayout
+            android:id="@+id/relative1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_180sdp"
+            android:background="@android:color/transparent">
+
+            <ImageView
+                android:id="@+id/ivMenuBack"
+                android:layout_width="@dimen/_29sdp"
+                android:layout_height="@dimen/_29sdp"
+                android:src="@drawable/ic_back"
+                android:paddingTop="@dimen/_9sdp"
+                android:paddingLeft="@dimen/_9sdp"
+                android:paddingRight="@dimen/_9sdp"
+                android:paddingBottom="@dimen/_9sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/bg_shape_menu"/>
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative2"
+            android:layout_below="@+id/relative1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_shape_corner">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_30sdp">
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Barang"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:textSize="@dimen/_20ssp"
+                    android:textColor="#000000"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginHorizontal="10dp"
+                    />
+                <TextView
+                    android:id="@+id/tvDe"
+                    android:layout_below="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Deskripsi"
+                    android:fontFamily="@font/nunito"
+                    android:textSize="@dimen/_15ssp"
+                    android:textColor="#000000"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginHorizontal="10dp"/>
+                <TextView
+                    android:id="@+id/tvContent"
+                    android:layout_below="@+id/tvDe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Isi"
+                    android:fontFamily="@font/nunito"
+                    android:textSize="@dimen/_15ssp"
+                    android:textColor="#000000"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginHorizontal="10dp"/>
+                <TextView
+                    android:id="@+id/labelHargaAwal"
+                    android:layout_below="@+id/tvContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Harga Awal : "
+                    android:fontFamily="@font/nunito"
+                    android:textSize="@dimen/_15ssp"
+                    android:textColor="#000000"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginHorizontal="10dp"/>
+                <TextView
+                    android:id="@+id/tvHargaAwal"
+                    android:layout_below="@+id/tvContent"
+                    android:layout_toRightOf="@id/labelHargaAwal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00000"
+                    android:fontFamily="@font/nunito"
+                    android:textSize="@dimen/_15ssp"
+                    android:textColor="#000000"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginHorizontal="5dp"/>
+                <TextView
+                    android:id="@+id/labelHargaAkhir"
+                    android:layout_below="@+id/labelHargaAwal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Harga Akhir : "
+                    android:fontFamily="@font/nunito"
+                    android:textSize="@dimen/_15ssp"
+                    android:textColor="#000000"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginHorizontal="10dp"/>
+                <TextView
+                    android:id="@+id/tvHargaAkhir"
+                    android:layout_below="@+id/labelHargaAwal"
+                    android:layout_toRightOf="@+id/labelHargaAkhir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="000000 "
+                    android:fontFamily="@font/nunito"
+                    android:textSize="@dimen/_15ssp"
+                    android:textColor="#000000"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginHorizontal="10dp"/>
+                <TextView
+                    android:id="@+id/labelPenawar"
+                    android:layout_below="@+id/labelHargaAkhir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Penawar Terakhir : "
+                    android:fontFamily="@font/nunito"
+                    android:textSize="@dimen/_15ssp"
+                    android:textColor="#000000"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginHorizontal="10dp"/>
+                <TextView
+                    android:id="@+id/tvPenawar"
+                    android:layout_below="@+id/labelHargaAkhir"
+                    android:layout_toRightOf="@+id/labelPenawar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="000000 "
+                    android:fontFamily="@font/nunito"
+                    android:textSize="@dimen/_15ssp"
+                    android:textColor="#000000"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginHorizontal="10dp"/>
+
+
+
+
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

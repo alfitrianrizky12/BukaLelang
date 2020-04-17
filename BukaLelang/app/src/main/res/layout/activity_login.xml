@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:id="@+id/relativeUp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:background="@drawable/kotak1">
+
+        <TextView
+            android:id="@+id/tvJudulLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:fontFamily="@font/nunito_extrabold"
+            android:text="BukaLelang"
+            android:textColor="#fff"
+            android:textSize="@dimen/_30sdp" />
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLogin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_below="@id/tvJudulLogin"
+            android:layout_marginStart="@dimen/_14sdp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="@dimen/_14sdp"
+            android:background="@drawable/bg_shape_corner">
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvBarLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeUp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:fontFamily="@font/nunito_extrabold"
+        android:text="Login"
+        android:textColor="#03A9F4"
+        android:textSize="@dimen/_22sdp" />
+
+    <TextView
+        android:id="@+id/tvHintUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvBarLogin"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:fontFamily="@font/nunito_light"
+        android:text="Email"
+        android:textColor="#3F51B5"
+        android:textSize="@dimen/_12ssp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edtUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvHintUsername"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:backgroundTint="#03A9F4"
+        android:fontFamily="@font/nunito"
+        android:hint="Masukan Email" />
+
+    <TextView
+        android:id="@+id/tvHintPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtUsername"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:fontFamily="@font/nunito_light"
+        android:text="Password"
+        android:textColor="#3F51B5"
+        android:textSize="@dimen/_12ssp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvHintPass"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:backgroundTint="#03A9F4"
+        android:fontFamily="@font/nunito"
+        android:hint="Masukan Password"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/btnLogin"
+        android:layout_width="@dimen/_115sdp"
+        android:layout_height="@dimen/_42sdp"
+        android:text="Login"
+        android:textSize="@dimen/_20sdp"
+        android:layout_below="@id/edtPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:fontFamily="@font/nunito_extrabold"
+        android:textColor="#fff"
+        android:background="@drawable/bg_shape_full"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tvGapunyaAkun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnLogin"
+        android:layout_marginStart="@dimen/_80sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:fontFamily="@font/nunito"
+        android:text="Belum Memiliki Akun?"
+        android:textSize="@dimen/_12ssp" />
+
+    <TextView
+        android:id="@+id/tvLinkRegis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daftar"
+        android:layout_below="@id/btnLogin"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_toRightOf="@id/tvGapunyaAkun"
+        android:textSize="@dimen/_12ssp"
+        android:fontFamily="@font/nunito"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:textColor="#341F97"/>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_13sdp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvCare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/_10sdp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/ivList"
+                    android:layout_width="@dimen/_93sdp"
+                    android:layout_height="@dimen/_93sdp"
+                    android:layout_marginStart="@dimen/_1sdp"
+                    android:scaleType="centerCrop"
+                    android:background="#341F97"/>
+
+                <TextView
+                    android:id="@+id/tvNamaBarang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="130dp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:text="Nama Barang"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_12ssp" />
+
+                <TextView
+                    android:id="@+id/tvDeskripsi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvNamaBarang"
+                    android:layout_marginLeft="130dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/nunito_light"
+                    android:text="Deskripsi"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_10ssp" />
+                <TextView
+                    android:id="@+id/tvHarga"
+                    android:layout_below="@+id/tvDeskripsi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="130dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/nunito_light"
+                    android:text="Rp.0000"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_10ssp" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

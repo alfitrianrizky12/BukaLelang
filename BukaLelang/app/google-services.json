@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "689916182390",
+    "firebase_url": "https://slelangonline.firebaseio.com",
+    "project_id": "slelangonline",
+    "storage_bucket": "slelangonline.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:689916182390:android:3d0caa661aa73789d5c457",
+        "android_client_info": {
+          "package_name": "com.example.slelangonline"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "689916182390-dh7ueeekr1gsdphv829eh97qer2bctt3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.slelangonline",
+            "certificate_hash": "bd08ff5ddb4444031a710952edbcf07bc2d28315"
+          }
+        },
+        {
+          "client_id": "689916182390-uu18f3hl801jvdajvjgktm15rpas26m1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTygcIrd5NqPeMUXI4ygO5A17mN3-SEYc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "689916182390-uu18f3hl801jvdajvjgktm15rpas26m1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

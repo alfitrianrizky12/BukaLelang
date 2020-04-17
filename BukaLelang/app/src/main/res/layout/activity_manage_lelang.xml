@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#404040">
+        <ImageView
+            android:id="@+id/iv_change"
+            android:layout_centerHorizontal="true"
+            android:layout_width="@dimen/_210sdp"
+            android:layout_height="@dimen/_200sdp"
+            android:src="@drawable/food"
+            android:scaleType="centerCrop"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_200sdp"
+            android:src="@drawable/dark_50"/>
+
+        <RelativeLayout
+            android:id="@+id/relative1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_180sdp"
+            android:background="@android:color/transparent">
+
+            <ImageView
+                android:id="@+id/ivMenuBars"
+                android:layout_width="@dimen/_29sdp"
+                android:layout_height="@dimen/_29sdp"
+                android:src="@drawable/ic_back"
+                android:paddingTop="@dimen/_9sdp"
+                android:paddingLeft="@dimen/_9sdp"
+                android:paddingRight="@dimen/_9sdp"
+                android:paddingBottom="@dimen/_9sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/bg_shape_menu"/>
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:fontFamily="@font/nunito_extrabold"
+                android:text="UbahFoto"
+                android:textColor="#fff"
+                android:textSize="@dimen/_25ssp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative2"
+            android:layout_below="@+id/relative1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_shape_corner">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_30sdp">
+
+                <TextView
+                    android:id="@+id/labelSpin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pilih Barang yang ingin dilelang"
+                    android:layout_marginStart="@dimen/_25sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/nunito_light"
+                    android:textSize="@dimen/_13ssp"
+                    android:textColor="#4EBDDA"/>
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:id="@+id/spin"
+                    android:layout_below="@+id/labelSpin"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textAlignment="center"
+                    android:background="#FFF"
+                    android:layout_marginStart="@dimen/_25sdp"
+                    android:layout_marginEnd="@dimen/_25sdp"
+                    />
+
+                <TextView
+                    android:id="@+id/labelTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/spin"
+                    android:layout_marginStart="@dimen/_25sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/nunito_light"
+                    android:text="Judul"
+                    android:textColor="#3F51B5"
+                    android:textSize="@dimen/_13ssp" />
+
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/txt_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_15ssp"
+                    android:textColor="#000"
+                    android:hint="Masukan Judul"
+                    android:layout_marginStart="@dimen/_25sdp"
+                    android:layout_marginEnd="@dimen/_25sdp"
+                    android:fontFamily="@font/nunito_light"
+                    android:layout_below="@id/labelTitle"
+                    android:backgroundTint="#1E90FF"/>
+
+                <TextView
+                    android:id="@+id/labelDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_title"
+                    android:layout_marginStart="@dimen/_25sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:fontFamily="@font/nunito_light"
+                    android:text="Deskripsi"
+                    android:textColor="#3F51B5"
+                    android:textSize="@dimen/_13ssp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/txt_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Masukan Deskripsi"
+                    android:textSize="@dimen/_15ssp"
+                    android:layout_below="@+id/labelDesc"
+                    android:layout_marginStart="@dimen/_25sdp"
+                    android:layout_marginEnd="@dimen/_25sdp"
+                    android:textColor="#9F9F9F"
+                    android:fontFamily="@font/nunito_light"
+                    android:backgroundTint="#1E90FF"/>
+
+                <TextView
+                    android:id="@+id/labelAkhir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_desc"
+                    android:layout_marginStart="@dimen/_25sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:fontFamily="@font/nunito_light"
+                    android:text="Batas Waktu"
+                    android:textColor="#3F51B5"
+                    android:textSize="@dimen/_13ssp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/txt_batasWaktu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Masukan Deadline"
+                    android:textSize="@dimen/_15ssp"
+                    android:layout_below="@+id/labelAkhir"
+                    android:layout_marginStart="@dimen/_25sdp"
+                    android:layout_marginEnd="@dimen/_25sdp"
+                    android:textColor="#9F9F9F"
+                    android:fontFamily="@font/nunito_light"
+                    android:backgroundTint="#1E90FF"/>
+
+                <TextView
+                    android:id="@+id/labelhargaAwal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_batasWaktu"
+                    android:layout_marginStart="@dimen/_25sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:fontFamily="@font/nunito_light"
+                    android:text="Harga Awal"
+                    android:textColor="#3F51B5"
+                    android:textSize="@dimen/_13ssp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/txt_hargaAwal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Masukan Harga Awal"
+                    android:textSize="@dimen/_15ssp"
+                    android:layout_below="@+id/labelhargaAwal"
+                    android:layout_marginStart="@dimen/_25sdp"
+                    android:layout_marginEnd="@dimen/_25sdp"
+                    android:textColor="#9F9F9F"
+                    android:fontFamily="@font/nunito_light"
+                    android:backgroundTint="#1E90FF"/>
+
+                <TextView
+                    android:id="@+id/btn_simpan"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_42sdp"
+                    android:text="Simpan"
+                    android:textSize="@dimen/_18ssp"
+                    android:layout_below="@id/txt_hargaAwal"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:textColor="#fff"
+                    android:background="@drawable/bg_shape_full"
+                    android:gravity="center"/>
+
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#404040">
+
+        <ImageView
+            android:id="@+id/ivDetail"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_200sdp"
+            android:layout_centerHorizontal="true"
+            android:background="#FFFF"
+            android:scaleType="centerCrop"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_200sdp"
+            android:src="@drawable/dark_30"/>
+
+        <RelativeLayout
+            android:id="@+id/relative1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_180sdp"
+            android:background="@android:color/transparent">
+
+            <ImageView
+                android:id="@+id/ivMenuBack"
+                android:layout_width="@dimen/_29sdp"
+                android:layout_height="@dimen/_29sdp"
+                android:src="@drawable/ic_back"
+                android:paddingTop="@dimen/_9sdp"
+                android:paddingLeft="@dimen/_9sdp"
+                android:paddingRight="@dimen/_9sdp"
+                android:paddingBottom="@dimen/_9sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/bg_shape_menu"/>
+
+
+
+        </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relative2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative1"
+        android:background="@drawable/bg_shape_corner">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_30sdp">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/nunito_semibold"
+                android:text="Nama Barang"
+                android:textColor="#000000"
+                android:textSize="@dimen/_20ssp" />
+
+            <TextView
+                android:id="@+id/tvCreateAt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_200sdp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/nunito_semibold"
+                android:text="Nama Barang"
+                android:textColor="#000000"
+                android:textSize="@dimen/_15ssp"
+                android:visibility="invisible" />
+            <TextView
+                android:id="@+id/tvPemilik"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_200sdp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/nunito_semibold"
+                android:text="milik"
+                android:textColor="#000000"
+                android:textSize="@dimen/_15ssp"
+                android:visibility="invisible" />
+            <TextView
+                android:id="@+id/tvPicTips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_200sdp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/nunito_semibold"
+                android:text="adad"
+                android:textColor="#000000"
+                android:textSize="@dimen/_15ssp"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tvDe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTitle"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/nunito"
+                android:text="Deskripsi"
+                android:textColor="#000000"
+                android:textSize="@dimen/_15ssp" />
+
+            <TextView
+                android:id="@+id/tvContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvDe"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/nunito"
+                android:text="Isi"
+                android:textColor="#000000"
+                android:textSize="@dimen/_15ssp" />
+
+            <TextView
+                android:id="@+id/labelHargaAwal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvContent"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/nunito"
+                android:text="Harga Awal : "
+                android:textColor="#000000"
+                android:textSize="@dimen/_15ssp" />
+
+            <TextView
+                android:id="@+id/tvHargaAwal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvContent"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/labelHargaAwal"
+                android:fontFamily="@font/nunito"
+                android:text="00000"
+                android:textColor="#000000"
+                android:textSize="@dimen/_15ssp" />
+
+            <TextView
+                android:id="@+id/labelHargaAkhir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/labelHargaAwal"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/nunito"
+                android:text="Harga Akhir : "
+                android:textColor="#000000"
+                android:textSize="@dimen/_15ssp" />
+
+            <TextView
+                android:id="@+id/tvHargaAkhir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/labelHargaAwal"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/labelHargaAkhir"
+                android:fontFamily="@font/nunito"
+                android:text="000000 "
+                android:textColor="#000000"
+                android:textSize="@dimen/_15ssp" />
+
+            <TextView
+                android:id="@+id/labelPenawar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/labelHargaAkhir"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/nunito"
+                android:text="Penawar Terakhir : "
+                android:textColor="#000000"
+                android:textSize="@dimen/_15ssp" />
+
+            <TextView
+                android:id="@+id/tvPenawar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/labelHargaAkhir"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/labelPenawar"
+                android:fontFamily="@font/nunito"
+                android:text="000000 "
+                android:textColor="#000000"
+                android:textSize="@dimen/_15ssp" />
+
+            <TextView
+                android:id="@+id/labelKolom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvPenawar"
+                android:layout_centerHorizontal="true"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/nunito"
+                android:text=" Silahkan Masukan Tambahan Nominal Untuk Menawar "
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="@dimen/_15ssp" />
+
+            <EditText
+                android:id="@+id/edtKolom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/labelKolom"
+                android:layout_marginHorizontal="70dp"
+                android:inputType="number"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/btnTawar"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_42sdp"
+                android:layout_below="@id/edtKolom"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/bg_shape_full"
+                android:fontFamily="@font/nunito_extrabold"
+                android:gravity="center"
+                android:text="Bid"
+                android:textColor="#fff"
+                android:textSize="@dimen/_18ssp" />
+
+            <TextView
+                android:id="@+id/labelBatasWaktu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnTawar"
+                android:layout_centerHorizontal="true"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/nunito"
+                android:text=" Perkiraan Lelang Ditutup Pada  "
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="@dimen/_10ssp" />
+
+            <TextView
+                android:id="@+id/tvCloseAt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/labelBatasWaktu"
+                android:layout_centerHorizontal="true"
+                android:text="0000"
+                android:textColor="#000000"
+                android:textAlignment="center"
+                android:textSize="@dimen/_10ssp" />
+
+        </RelativeLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

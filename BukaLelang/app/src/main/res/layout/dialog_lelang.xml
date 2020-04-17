@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative1"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvOpsi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pilih Satu Opsi"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:fontFamily="@font/nunito_extrabold"
+        android:textSize="@dimen/_14ssp"
+        android:textColor="#4EBDDA"/>
+
+    <RelativeLayout
+        android:id="@+id/relative2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/Edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_18sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="#00FFFFFF"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="Selesai"
+            android:textColor="#5BFF31"
+            android:textSize="@dimen/_13ssp">
+
+        </Button>
+
+    <Button
+        android:id="@+id/Delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        android:text="Hapus"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_toRightOf="@id/Edit"
+        android:textColor="#FF4141"
+        android:textSize="@dimen/_13ssp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:fontFamily="@font/nunito_semibold">
+
+    </Button>
+        <Button
+            android:id="@+id/Lihat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="#00FFFFFF"
+            android:layout_toRightOf="@id/Delete"
+            android:text="Lihat"
+            android:textColor="#2986AC"
+            android:fontFamily="@font/nunito_semibold"
+            android:textSize="@dimen/_13ssp">
+
+        </Button>
+        </RelativeLayout>
+
+</RelativeLayout>

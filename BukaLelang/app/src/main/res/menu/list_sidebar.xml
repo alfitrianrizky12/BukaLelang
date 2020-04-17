@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/menu_barang"
+        android:title="Barang"
+        android:icon="@drawable/ic_account_circle_black_24dp"/>
+
+    <item android:id="@+id/menu_lelang"
+        android:title="Lelang"
+        android:icon="@drawable/ic_photo_library_black_24dp"/>
+
+    <item android:id="@+id/menu_hasil_lelang"
+        android:title="Care"
+        android:icon="@drawable/ic_care"/>
+
+
+    <item android:id="@+id/menu_Logout"
+        android:title="Logout"
+        android:icon="@drawable/ic_out_black_24dp"/>
+</menu>
